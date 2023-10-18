@@ -23,12 +23,10 @@ namespace Application.Activities
             {
                 try
                 {
-                    for(var i =0;i<10;i++)
-                    {
                         cancellationToken.ThrowIfCancellationRequested();
                         await Task.Delay(1000,cancellationToken);
-                        _logger.LogInformation($"Task {i} has complted");
-                    }
+                        //_logger.LogInformation($"Task {i} has complted");
+                
                 }
                 catch (System.Exception)
                 {
